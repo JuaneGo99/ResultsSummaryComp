@@ -96,9 +96,13 @@ body{
 }
 
 .summary-container p{
-    color: var(--DarkGrayBlue);
     font-size: 0.9em;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.summary p{
+    color: var(--DarkGrayBlue);
+    font-weight: 700;
 }
 
 .summary{
@@ -257,12 +261,14 @@ body{
         padding: 45px 40px;
     }
     .summary-container p{
-        color: var(--DarkGrayBlue);
         font-size: 0.9em;
         font-weight: 800;
     }
     .summary{
         margin-bottom: 30px;
+    }
+    .summary p{
+        font-size: 1.3em;
     }
     .icon p{
         font-weight: 500;
