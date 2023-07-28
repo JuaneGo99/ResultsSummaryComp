@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+    /* ## Colors
+    ### Primary */
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+    /* ## Gradients */
+    --LightSlateBlue: hsl(252, 100%, 67%); /*(background)*/
+    --LightRoyalBlue: hsl(241, 81%, 54%); /*(background)*/
+    --VioletBlue: hsla(256, 72%, 46%, 1); /*(circle)*/
+    --PersianBlue: hsla(241, 72%, 46%, 0); /*(circle)*/
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: var(--White);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.main-container{
+    width: 375px;
+    height: 810px;
+    margin: 0 auto;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 5px 5px 40px -25px rgba(66, 68, 90, 1);
+}
+
+.result-container{
+    background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue)) ;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 356px;
+    padding: 20px 60px 44px;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+}
+
+.result{
+    color: var(--LightLavender);
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.average{
+    background-image: linear-gradient(var(--VioletBlue), var(--PersianBlue));
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+.point{
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.hundred{
+    color: var(--LightLavender);
+    font-size: 0.7em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.great h3{
+    margin-bottom: 10px;
+}
+
+.great p{
+    color: var(--LightLavender);
+    font-size: 0.85em;
+}
+
+.summary-container{
+    padding: 30px;
+}
+
+.summary-container p{
+    color: var(--DarkGrayBlue);
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.summary{
+    margin-bottom: 25px;
+}
+
+.activities-container{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 57px;
+    padding: 10px 17px;
+    margin: 0;
+    margin-bottom: 16px;
+    border-radius: 10px;
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.icon{
+    display: flex;
+    margin: 0;
+}
+
+.reaction .icon img{
+    background-image: url(assets/images/icon-reaction.svg);
+    background-size: cover;
+    width: 20px;
+}
+
+.reaction .icon p{
+    color: var(--LightRed);
+    margin-left: 15px;
+}
+
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.1);;
+}
+
+.memory .icon img{
+    background-image: url(assets/images/icon-memory.svg);
+    background-size: cover;
+    width: 20px;
+}
+
+.memory .icon p{
+    color: var(--OrangeyYellow);
+    margin-left: 15px;
+}
+
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);;
+}
+
+.verbal .icon img{
+    background-image: url(assets/images/icon-verbal.svg);
+    background-size: cover;
+    width: 20px;
+}
+
+.verbal .activity p{
+    color: var(--GreenTeal);
+    margin-left: 15px;
+}
+
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.visual .icon img{
+    background-image: url(assets/images/icon-visual.svg);
+    background-size: cover;
+    width: 20px;
+}
+
+.visual .activity p{
+    color: var(--CobaltBlue);
+    margin-left: 15px;
+}
+
+.qualifying_activity span{
+    font-weight: 600;
+    color: var(--LightLavender);
+}
+
+.button{
+    background-color: var(--DarkGrayBlue);
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    height: 55px;
+    margin-top: 5px;
+    border-radius: 50px;
+    border: none;
+}
+
+.button:hover{
+    background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue)) ;
+    cursor: pointer;
+}
+
+.attribution { 
+    margin: 20px 0;
+    font-size: 11px; 
+    font-weight: 500;
+    text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:900px){
+    .main-container{
+        display: flex;
+        width: 735px;
+        height: 512px;
+        margin: 284px auto;
+        border-radius: 30px;
+    }
+    .result-container{
+        width: 369px;
+        height: 100%;
+        padding: 40px 53px 53px;
+        border-radius: 30px;
+    }
+    .result{
+        color: var(--LightLavender);
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    .average{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 35px;
+    }
+    .point{
+        font-size: 4em;
+        margin-top: 40px;
+    }
+    .hundred{
+        font-size: 1em;
+    }
+    .great h3{
+        font-size: 1.5em;
+    }
+    .great p{
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .summary-container{
+        width: 367px;
+        height: 100%;
+        padding: 45px 40px;
+    }
+    .summary-container p{
+        color: var(--DarkGrayBlue);
+        font-size: 0.9em;
+        font-weight: 800;
+    }
+    .summary{
+        margin-bottom: 30px;
+    }
+    .icon p{
+        font-weight: 500;
+    }
+    .button{
+        font-size: 1em;
+        font-weight: 600;
+        margin-top: 24px;
+    }
+}
